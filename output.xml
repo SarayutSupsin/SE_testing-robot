@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.11.0 on win32)" generated="2026-10-16T19:11:37.471316" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Passwrong" source="D:\University memory\year4 [2569]\Softwae Enginner\SE-robot69\login_passwrong.robot">
+<test id="s1-t1" name="Login With Invalid Password" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-16T19:11:38.946487" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-16T19:11:38.937285" elapsed="4.937165"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-16T19:11:43.875448" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-16T19:11:43.874450" elapsed="0.071054"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-10-16T19:11:43.945504" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-10-16T19:11:43.966109" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>wrong_password</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-16T19:11:43.945504" elapsed="0.054957"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-16T19:11:44.001467" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-16T19:11:44.001467" elapsed="0.050775"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-10-16T19:11:44.059547" level="INFO">Current page contains text 'Username and password do not match'.</msg>
+<arg>Username and password do not match</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-10-16T19:11:44.052242" elapsed="0.007305"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<arg>Click OK to continue testing</arg>
+<doc>Pauses execution until user clicks `Ok` button.</doc>
+<status status="PASS" start="2026-10-16T19:11:44.059547" elapsed="3.886562"/>
+</kw>
+<status status="PASS" start="2026-10-16T19:11:38.892178" elapsed="9.053931"/>
+</test>
+<status status="PASS" start="2026-10-16T19:11:37.473299" elapsed="10.474323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Passwrong" id="s1" pass="1" fail="0" skip="0">Login Passwrong</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
